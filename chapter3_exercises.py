@@ -36,7 +36,7 @@ do_twice(print_twice, 'spam')
 
 #3.4.5
 def do_four(a, meat):
-	a(meat)
-	a(meat)
+	do_twice(meat)
+	do_twice(meat)
 
 do_four(print_twice, 'fish')

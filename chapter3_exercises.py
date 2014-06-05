@@ -39,4 +39,4 @@ def do_four(a, meat):
 	a(meat)
 	a(meat)
 
-do_four(print_twice, 'fish')
+do_four(print_twice, 'meat')

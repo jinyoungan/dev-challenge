@@ -36,7 +36,36 @@ do_twice(print_twice, 'spam')
 
 #3.4.5
 def do_four(a, meat):
-	do_twice(meat)
-	do_twice(meat)
+	do_twice(a, meat)
+	do_twice(a, meat)
 
 do_four(print_twice, 'meat')
+
+#3.5
+
+def do_twice(n):
+	n()
+	n()
+
+def do_four(n):
+	do_twice(n)
+	do_twice(n)
+
+def colm():
+	print "+----+----+"
+
+def row():
+	print "|    |    |"
+
+def rows():
+	do_four(row)
+
+def base():
+	colm()
+	rows()
+
+def final():
+	do_twice(base)
+	colm()
+
+final()
